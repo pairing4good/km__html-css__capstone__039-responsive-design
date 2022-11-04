@@ -1,23 +1,24 @@
-# Kanban Board: Column Heading
-
-Based on customer feedback, we are going to pivot the task list to a [kanban board](https://en.wikipedia.org/wiki/Kanban_board) with three columns (todo, doing, done). This is a significant change. We will break this large change down into smaller stories to avoid breaking our product.
+# 039 Responsive Design
 
 ```
-Given that tasks exist 
-When they are displayed 
-Then each column's status is listed once at the top of each column
+Given that the user screen is less than 400px wide 
+When the application is displayed 
+Then the kanban columns are displayed vertically in a column And the todo column displays on the top And the done column displays on the bottom
+```
+
+```
+Given that the user screen is at least 400px wide 
+When the application is displayed 
+Then the kanban columns are displayed horizontally in a row And the todo column displays on the left And the done column displays on the right
 ```
 
 Steps:
-- the `todo-column` should have a todo heading with the id `todo-status-heading` and the classes `todo` and `task-status`
-- the `doing-column` should have a doing heading with the id `doing-status-heading` and the classes `doing` and `task-status`
-- the `done-column` should have a done heading with the id `done-status-heading` and the classes `done` and `task-status`
-- cards should no longer have an individual status
-- cards should only contain a description without a containing `task-description` div
-- the card class should have a padding of 10px
-- the card class should not have a set width
-- the column class should have a minimum width of 175px
+- the board class should display the kanban columns vertically when the screen is a maximum width of 400px.
 
 Resources:
-- https://www.w3schools.com/cssref/pr_padding.asp
-- https://www.w3schools.com/cssref/pr_dim_min-width.asp
+- https://www.w3schools.com/cssref/css3_pr_mediaquery.asp
+- https://www.w3schools.com/cssref/css3_pr_flex-direction.asp
+- https://www.w3schools.com/html/html_responsive.asp
+
+Building toward CSTA Standards:
+- Develop programs for multiple computing platforms. (3B-AP-19) https://www.csteachers.org/page/standards

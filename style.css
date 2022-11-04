@@ -4,6 +4,17 @@
     display: flex;
 }
 
+.card {
+    border: solid;
+    margin: 10px;
+    box-shadow: 3px 3px lightgray;
+    padding: 10px;
+}
+
+.column {
+    min-width: 175px;
+}
+
 .task-status {
     border-radius: 10px;
     text-align: center;
